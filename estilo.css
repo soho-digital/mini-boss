@@ -1,11 +1,20 @@
 body {
-	background-image: url("C:\Users\k_rol_000\Desktop\Projeto\img\background.jpg") no-repeat;
+	background: url("img/background.jpg") no-repeat;
+	/*
+	PROBLEMA:
+		As barras estao invertidas ( tipo \ )
+		Tu usou background-image e adicionou o no-repeat, daew o css não entendeu.
+
+		É preferivel usar só background (ou margin, ou qualquer outra propriedade primaria), do que usar background-image, depois background-color, enfim.
+		
+	*/
+	/*Evita caminhos muito longos, tipo "C:\Users\k_rol_000\Desktop\Projeto\img\background.jpg"*/	
 }
 
 
 #menu {
-	position:center;
-	top:10px;
+	position:center; /*Acho que não existe center, dá uma olhada na MDN*/
+	top:10px; /*Tenta usar margin ao inves desses espaçamentos. Tu pode até agrupar, como eu falei em cima, tipo "margin: (valor top) (right) (bottom) (left);"*/ 
 	left:100px;
 	margin:auto;
 }
@@ -17,7 +26,7 @@ ul{
 
 li {
 	display: inline;
-	font-family: Arial;
+	font-family: Arial; /*Eu gosto de colocar o font-family no body, acho mais pratico, mas é preferencia minha, mesmo. Faz como tu quiser.*/
 	padding: 5px;
 	text-decoration:none;
 }
