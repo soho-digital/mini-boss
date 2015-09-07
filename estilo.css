@@ -1,0 +1,38 @@
+body {
+	background-image: url("C:\Users\k_rol_000\Desktop\Projeto\img\background.jpg") no-repeat;
+}
+
+
+#menu {
+	position:center;
+	top:10px;
+	left:100px;
+	margin:auto;
+}
+ul{
+	list-style-type: none;
+	position: fixed;
+	margin: -10px;
+}
+
+li {
+	display: inline;
+	font-family: Arial;
+	padding: 5px;
+	text-decoration:none;
+}
+
+#menu ul li a {
+	text-align:center;
+	padding: 2px 10px;
+	display: inline-block;
+	text-decoration: none;
+	
+}
+
+#logo {
+  float: left;
+  background-image:url('C:\Users\k_rol_000\Desktop\Projeto\img\organic-logo_03.png');
+  
+}
+
